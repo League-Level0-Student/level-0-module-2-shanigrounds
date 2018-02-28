@@ -6,6 +6,7 @@ package random;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Random;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -86,13 +87,16 @@ public class RockPaperScissors extends JPanel implements ActionListener{
         //4. Run the program again. Is the result different?
  
         int selection = 0;
-       
-        if(e.getSource() == paperButton){
+       Random game = new Random();
+       opponentSelection = game.nextInt((2 - 0)+1) + 0;
+        if(e.getSource() == paperButton){ 
             selection = 1;
         }else if(e.getSource() == scissorsButton){
             selection = 2;
+       
+        }else if(e.getSource() == rockButton) {
+        selection = 	0;
         }
-        
         JOptionPane.showMessageDialog(null, "You chose: " + convertSelection(selection) + ".\n"
                     + "The computer chose: " + convertSelection(opponentSelection) + ".\n");
         
@@ -114,7 +118,7 @@ public class RockPaperScissors extends JPanel implements ActionListener{
             return "PAPER";
        else if (s==2)
             return "SCISSORS";
-       else
+       else 
             return "";
         }
     }
