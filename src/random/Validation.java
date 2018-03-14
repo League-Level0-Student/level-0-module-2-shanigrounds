@@ -20,16 +20,16 @@ public class Validation {
 
 		// 3. Use each value of randomNumber to give the user a random compliment.
 if(randomNumber == 0) {
-JOptionPane.showMessageDialog(null, "You have a good personality");
+JOptionPane.showMessageDialog(null, "You have a good personality!");
 }
 	if(randomNumber == 1) {
-		JOptionPane.showMessageDialog(null, "You are beautiful!");
+		JOptionPane.showMessageDialog(null, "You are awesome!");
 	}
 if(randomNumber == 2) {
-	JOptionPane.showMessageDialog(null, "You have nice hair");
+	JOptionPane.showMessageDialog(null, "You have nice style!");
 }
 if(randomNumber == 3) {
-	JOptionPane.showMessageDialog(null, "You're good at math");
+	JOptionPane.showMessageDialog(null, "You're someone's reason to smile!");
 }
 		// 4. Repeat all the code above 10 times
 		
